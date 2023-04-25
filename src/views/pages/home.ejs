@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <%- include('../partials/head') %>
+</head>
+<body>
+    <!--Header design-->
+    <header class="header">
+        <a href="/" class="logo" style="cursor: pointer;">BLOG PERSONAL</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <%- include('../partials/navigation') %>
+    </header>
+
+    <!--Section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hola!</h3>
+            <h1>Me llamo Santiago Heredia</h1>
+            <h3>Y soy desarrollador <span class="multiple-text"></span></h3>
+            <p>Tengo pasión por la tecnología, la computación y el desarrollo de proyectos innovadores. Te invito a conocerme un poco más</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/thiago.net95/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/thiagoh2605/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/santiago-heredia-79b003253/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/ThiagoHS26" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1IcVV1xUbUMAvFdYYkyP0jWF0bmcLRlMO/view?usp=share_link" target="_blank" class="btn" download>Descargar CV</a>
+        </div>
+        <!--<div class="home-img">
+            <img src="/img/javascript_img.jpg" alt="home_image">
+        </div>-->
+    </section>
+
+    <!--About de section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif" alt="about-image">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>mi</span></h2>
+            <p>Estudié la carrera de sistemas y computación en la ciudad de Riobamba, donde actualmente resido. Durante mi carrera universitaria me interesó mucho el desarrollo <span>Full Stack, </span>
+                así que empecé por aprender diseño móvil y web con <span>Adobe XD</span> y <span>Photoshop. </span>Después 
+                aprendí sobre bases de datos relacionales y no relacioles, lenguajes de programación, hasta que finalmente 
+                me decidí por <span>JavaScript. </span>He desarrollado proyectos Full Stack con este lenguaje y utlizando
+                <span>MongoDB </span> como base de datos. A futuro espero poder continuar especializandome en desarrollo de software,
+                 y ciencia de datos.
+
+            </p>
+            <a href="/aboutme" class="btn">Leer más</a>
+        </div>
+    </section>
+
+    <!--Services section-->
+    <section class="services" id="services">
+        <h2 class="heading">Mis <span>servicios</span></h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Desarrollo web</h3>
+                <p>Angular, Laravel, Java</p>
+                <!--<a href="#services" class="btn">Leer más</a>-->
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-pen"></i>
+                <h3>Diseño gráfico</h3>
+                <p>Banners, publicidad, diseños interactivos con Adobe XD y Photoshop</p>
+                <!--<a href="#services" class="btn">Leer más</a>-->
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-mobile"></i>
+                <h3>Desarrollo móvil</h3>
+                <p>Apps con Java, React Native</p>
+                <!--<a href="#services" class="btn">Leer más</a>-->
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio section-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Mis últimos <span>proyectos</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="/img/geompas/index/index.jpg" alt="project_image">
+                <div class="portfolio-layer">
+                    <h4>Geomaps ICA</h4>
+                    <a href="https://github.com/ThiagoHS26/geomaps.git" class="btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="/img/sysmotors/index/index.jpg" alt="project_image">
+                <div class="portfolio-layer">
+                    <h4>Sistema gestor de ventas</h4>
+                    <a href="https://github.com/ThiagoHS26/SGVMeanStackFront.git" class="btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="/img/apirest/index/index.png" alt="project_image">
+                <div class="portfolio-layer">
+                    <h4>API Rest Datos Georreferenciales</h4>
+                    <a href="https://github.com/ThiagoHS26/geomaps-server.git" class="btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Contacto section-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contacto</h2>
+        <form action="https://formsubmit.co/0e9c90bd88e6fde1b08298bcbd2f282b" method="POST">
+            <div class="input-box">
+                <input type="text" placeholder="Nombres completos" name="name" required> 
+                <input type="email" placeholder="Correo electrónico" name="email" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Teléfono" name="phone">
+                <input type="text" placeholder="Asunto" name="subject" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="7" placeholder="Aquí tu mensaje..." name="message" required></textarea>
+            <input type="submit" value="Enviar" class="btn" onclick="send()">
+
+            <input type="hidden" name="_next" value="http://localhost:3000/">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </section>
+
+    <!--Footer design-->
+    <%- include('../partials/footer') %>
+    <!--Scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Typed JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--JS-->
+<script src="/js/main.js"></script>
+</body>
+</html>
