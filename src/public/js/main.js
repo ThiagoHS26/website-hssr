@@ -58,6 +58,14 @@ const typed = new Typed('.multiple-text', {
 });
 
 /*================== Send message ==================================*/
-function send(){
-    alert("Tu mensaje ha sido enviado");
+
+function habilitar(){
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    
+    if(name != "" && email != ""){
+        btn = document.getElementById("btnSend").disabled = false;
+    }
 }
+document.getElementById("name").addEventListener("keyup",habilitar);
+document.getElementById("email").addEventListener("keyup",habilitar);

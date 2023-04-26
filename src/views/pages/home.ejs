@@ -117,15 +117,15 @@
         <h2 class="heading">Contacto</h2>
         <form action="https://formsubmit.co/0e9c90bd88e6fde1b08298bcbd2f282b" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Nombres completos" name="name" required> 
-                <input type="email" placeholder="Correo electrónico" name="email" required>
+                <input type="text" placeholder="Nombres completos" name="name" id="name" required> 
+                <input type="email" placeholder="Correo electrónico" name="email" id="email" required>
             </div>
             <div class="input-box">
                 <input type="tel" placeholder="Teléfono" name="phone">
-                <input type="text" placeholder="Asunto" name="subject" required>
+                <input type="text" placeholder="Asunto" name="subject" id="subject" required>
             </div>
-            <textarea name="" id="" cols="30" rows="7" placeholder="Aquí tu mensaje..." name="message" required></textarea>
-            <input type="submit" value="Enviar" class="btn" onclick="send()">
+            <textarea name="" id="message" cols="30" rows="7" placeholder="Aquí tu mensaje..." name="message" required></textarea>
+            <button id="btnSend" type="submit" class="btn">Enviar</button>
 
             <input type="hidden" name="_next" value="https://herediasantiago.up.railway.app/">
             <input type="hidden" name="_captcha" value="false">
